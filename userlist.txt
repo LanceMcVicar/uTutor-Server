@@ -1,0 +1,52 @@
+381 Quiz Practice
+
+1
+	P(O u W} = P{O} + P{W} - P{O & W}
+	= .2 + .3 - .1 = .4
+
+2
+	P{Exactly One Works} = P{C} & P{!P} + P{!C} & P{P}
+	.1 * .85 + .9 * .15 = .22 or 22%
+	
+3
+	P(D|R) = .07
+	P(D|L) = .13
+	P(R) = .4
+	P(L) = .6
+	P(D) = P(R&D) + P(L&D)
+	= P(R) * P(D|R) + P(L) * P(D|L)
+	= .4 * .07 		+	.6 *	.13 = .106 or 10.6%+6
+	
+381 Homework 1 Erratum
+
+Part 1
+
+#4
+	Overlap, therefore mutex
+	To be independant: P(A and B)== P(A)P(B)
+	132 students total
+	P(M&E)= 8/132
+	P(M) = 48/132
+	P(E) = 22/132
+	
+	P(M&E) = P(M)*P(E)
+	8/132 = 48/132 * 22/132
+	2/33 = 2/33
+	Therefore Independent
+	
+Part 2
+
+#1
+	Overlap, therefore not mutex
+	Total 320
+	P{H&P} = P{H} * P{D}
+	5/320 = 45/320 * 65/320
+	1/64 = 9/64 * 13/64
+	Therefore Not Independent
+	
+#3 
+	Where R2: Red on second draw, R1/W1: Red/White on the first draw
+	P{R2} = P{R1 & R2} + P{W1 & R2}
+	P{R2} = P{R1}*P{R2|R1} + P{W1} * P{R2|W1}
+	P{R2} = (2/6 * 4/5) + (4/6 * 3/5) = 8/30 * 12/30
+	P{R2} = 20/30 or 2/3 or 66.66%

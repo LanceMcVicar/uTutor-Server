@@ -1,14 +1,13 @@
 <?php
 	$servername = "uTutor";
-	$username = "user1";
-	$password = "1234";
-	
+	$username = "root";
+	$password = "Random1*";
+	$database = "ututor";
 	//Connection
-	$conn = new mysqli($servername,$username,$password)
+	$conn = new mysqli($servername,$username,$password,$database);
 	
 	//Verify
 	if($conn->connect_error) {
 		die("Connection failed successfully: " . $conn->connect_error);
-	}
-	echo "Connected Successfully"
+	}	
 ?>
