@@ -1,4 +1,5 @@
 <?php
+	require_once("connect.php");
 	$sql = "SELECT * FROM `users`";
 	$result = $conn->query($sql);
 	
