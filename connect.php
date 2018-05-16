@@ -1,10 +1,7 @@
 <?php
-	$servername = "uTutor";
-	$username = "root";
-	$password = "Random1*";
-	$database = "ututor";
 	//Connection
-	$conn = new mysqli($servername,$username,$password,$database);
+	$conn = new mysqli(getenv('RDS_HOSTNAME'),getenv('RDS_USERNAME'),getenv('RDS_PASSWORD'),getenv('RDS_DB_NAME'),getenv('RDS_PORT'));
+	//$conn = new mysqli($servername,$username,$password,$database);
 	
 	//Verify
 	if($conn->connect_error) {
